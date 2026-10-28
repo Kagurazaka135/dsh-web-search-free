@@ -413,7 +413,7 @@ export async function searchExa(query: string, maxResults: number, signal?: Abor
   const headers = { "content-type": "application/json", accept: "application/json, text/event-stream" };
   const init = {
     jsonrpc: "2.0", id: 1, method: "initialize",
-    params: { protocolVersion: "2024-11-05", capabilities: {}, clientInfo: { name: "dsh-web-search-free", version: "0.1.0" } },
+    params: { protocolVersion: "2024-11-05", capabilities: {}, clientInfo: { name: "dsh-web-search-free-kg", version: "0.1.0" } },
   };
   const initialized = await fetchText(url, { method: "POST", headers, body: JSON.stringify(init) }, deadline - Date.now(), signal);
   const sessionId = initialized.headers.get("Mcp-Session-Id");

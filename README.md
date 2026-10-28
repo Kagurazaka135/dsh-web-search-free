@@ -4,6 +4,8 @@
 
 注册进 `ctx.web`，实现 `WebSearchProvider` 契约。DSH 自带的 `web-search-deepseek` / `web-search-exa` / `web-search-perplexity` 都是单后端，这个是多后端自动降级。
 
+> 包名是 `dsh-web-search-free-kg`（npm 上 `dsh-web-search-free` 已被他人占用），仓库名保持 `dsh-web-search-free`。
+
 ## 降级链
 
 ```
